@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/style.css')}}"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2>TaskFlow</h2>
+        <button class="btn-primary">+ New Project</button>
+        <ul class="project-list">
+          <li class="active">Personal</li>
+          <li>Work</li>
+          <li>Learning</li>
+        </ul>
+      </aside>
+
+      <!-- Main -->
+      <main class="main">
+        <header>
+          <h1>My Tasks</h1>
+          <button class="btn-primary">+ Add Task</button>
+        </header>
+
+        <section class="task-board">
+          <div class="task-card high">
+            <h3>Learn JavaScript Fetch API</h3>
+            <p>Understand async calls with Flask backend</p>
+            <span class="tag">High</span>
+          </div>
+
+          <div class="task-card medium">
+            <h3>Design MongoDB Schema</h3>
+            <p>Projects and tasks collections</p>
+            <span class="tag">Medium</span>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="{{url_for('static', filename='js/ui.js')}}"></script>
+    <script src="{{url_for('static', filename='js/api.js')}}"></script>
+    <script src="{{url_for('static', filename='js/tasks.js')}}"></script>
+  </body>
+</html>

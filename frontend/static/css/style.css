@@ -1,0 +1,71 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background: #293693;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.project-list li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.project-list li.active {
+  background: #049647;
+  border-radius: 6px;
+}
+
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.task-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.task-card.high {
+  border-left: 5px solid #e74c3c;
+}
+.task-card.medium {
+  border-left: 5px solid #f1c40f;
+}
+
+.btn-primary {
+  background: #5590cc;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
